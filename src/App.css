@@ -1,0 +1,27 @@
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it's behind the main content */
+}
+
+.blur-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(8px); /* Adjust the blur radius as needed */
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake-animation {
+  animation: shake 0.5s ease-in-out;
+}
+ 

@@ -1,0 +1,15 @@
+{
+"data":[
+    {"name":"Brazil","img":"https://www.worldometers.info/img/flags/small/tn_br-flag.gif"},
+    {"name":"Argentina","img":"https://www.worldometers.info/img/flags/small/tn_ar-flag.gif"},
+    {"name":"England","img":"https://www.worldometers.info/img/flags/small/tn_uk-flag.gif"},
+    {"name":"France","img":"https://www.worldometers.info/img/flags/small/tn_fr-flag.gif"},
+    {"name":"Germany","img":"https://www.worldometers.info/img/flags/small/tn_gm-flag.gif"},
+    {"name":"Spain","img":"https://www.worldometers.info/img/flags/small/tn_sp-flag.gif"},
+    {"name":"Italy","img":"https://www.worldometers.info/img/flags/small/tn_it-flag.gif"},
+    {"name":"Uruguay","img":"https://www.worldometers.info/img/flags/small/tn_uy-flag.gif"},
+    {"name":"Belgium","img":"https://www.worldometers.info/img/flags/small/tn_be-flag.gif"},
+    {"name":"Netherlands","img":"https://www.worldometers.info/img/flags/small/tn_nl-flag.gif"}, 
+    {"name":"Portugal","img":"https://www.worldometers.info/img/flags/small/tn_po-flag.gif"} 
+]
+}
