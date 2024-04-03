@@ -182,11 +182,6 @@ function App() {
     
 
   const handleButtonClick = () => {
-    if(attempt==1){
-      console.log(attempt)
-      startGame()
-    }
-    setAttempt(attempt+1)
  
 
     const { grid, players } = gridAndPlayers;
