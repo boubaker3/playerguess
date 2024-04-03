@@ -2,13 +2,34 @@
   "data": [
     {
       "Brazil": [
-        {"p_name": "Neymar Jr.", "teams": [{"t_name": "FC Barcelona"}, {"t_name": "Paris Saint-Germain"},{"t_name":"Santos FC"}]},
+        {
+          "p_name": "Cafu",
+          "teams": [  {"t_name": "AS Roma"}, {"t_name": "AC Milan"}]
+          },  {
+          "p_name": "Rivaldo",
+          "teams": [{"t_name": "FC Barcelona"}, {"t_name": "AC Milan"}]
+          }, {
+          "p_name": "Garrincha",
+          "teams": [ {"t_name": "Flamengo"}]
+          },
+            {
+          "p_name": "Ronaldinho",
+          "teams": [{"t_name": "Paris Saint-Germain"}, {"t_name": "FC Barcelona"}, {"t_name": "AC Milan"}]
+          },
+          {
+            "p_name": "Ronaldo Nazário",
+            "teams": [{"t_name": "PSV Eindhoven"}, {"t_name": "FC Barcelona"},
+             {"t_name": "Inter Milan"}, {"t_name": "Real Madrid"}, {"t_name": "AC Milan"} ]
+            },
+
+          {"p_name": "Neymar Jr.", "teams": [{"t_name": "FC Barcelona"}, {"t_name": "Paris Saint-Germain"},{"t_name":"Santos FC"}]},
         {"p_name": "Roberto Firmino", "teams": [{"t_name": "Liverpool FC"}]},
         {"p_name": "Alisson Becker", "teams": [{"t_name": "Liverpool FC"}]},
         {"p_name": "Casemiro", "teams": [{"t_name": "Real Madrid"}]},
         {"p_name": "Marcelo", "teams": [{"t_name": "Real Madrid"}]},
         {"p_name": "Vinicius Junior", "teams": [{"t_name": "Real Madrid"}]},
         {"p_name": "Fabinho", "teams": [{"t_name": "Liverpool FC"}]},
+        {"p_name": "Ederson", "teams": [{"t_name": "Manchester City"}]},
         {"p_name": "Gabriel Jesus", "teams": [{"t_name": "Manchester City"}]},
         {"p_name": "Richarlison", "teams": [{"t_name": "Everton FC"}]},
         {"p_name": "Arthur Melo", "teams": [{"t_name": "FC Barcelona"}, {"t_name": "Juventus"}]},
@@ -30,7 +51,7 @@
         {"p_name": "Willian", "teams": [{"t_name": "Chelsea FC"}, {"t_name": "Arsenal FC"}]},
         {"p_name": "Marquinhos", "teams": [{"t_name": "Paris Saint-Germain"}]},
         {"p_name": "Fernandinho", "teams": [{"t_name": "Manchester City"}]},
-        {"p_name": "Lucas Paqueta", "teams": [{"t_name": "AC Milan"}]},
+        {"p_name": "Lucas Paqueta", "teams": [{"t_name": "AC Milan"},{"t_name":"West Ham United"},{"t_name":"Olympique Lyon"}]},
         {"p_name": "Diego Carlos", "teams": [{"t_name": "Sevilla FC"}]},
         {"p_name": "Rafinha", "teams": [{"t_name": "Paris Saint-Germain"}]},
         {"p_name": "Miranda", "teams": [{"t_name": "Inter Milan"}]},
@@ -72,7 +93,11 @@
     },
     {
       "Argentina": [
-      {"p_name": "Lionel Messi", "teams": [{"t_name": "FC Barcelona"}, {"t_name": "Paris Saint-Germain"}]},
+        {
+          "p_name": "Alfredo Di Stefano",
+          "teams": [ {"t_name": "Real Madrid"}, {"t_name": "Espanyol"}]
+          },
+           {"p_name": "Lionel Messi", "teams": [{"t_name": "FC Barcelona"}, {"t_name": "Paris Saint-Germain"}]},
         {"p_name": "Sergio Aguero", "teams": [{"t_name": "Manchester City"}, {"t_name": "FC Barcelona"}]},
         {"p_name": "Angel Di Maria", "teams": [{"t_name": "Real Madrid"}, {"t_name": "Manchester United"}, {"t_name": "Paris Saint-Germain"}]},
         {"p_name": "Gonzalo Higuain", "teams": [{"t_name": "Real Madrid"}, {"t_name": "Napoli"}, {"t_name": "Juventus"}]},
@@ -90,7 +115,7 @@
       {"p_name": "Angel Correa", "teams": [{"t_name": "Atletico Madrid"}]},
         {"p_name": "Santiago Ascacibar", "teams": [{"t_name": "Stuttgart"}]},
         {"p_name": "Ramiro Funes Mori", "teams": [{"t_name": "Villarreal"}]},
-        {"p_name": "Nicolás Tagliafico", "teams": [{"t_name": "Ajax Amsterdam"}]},
+        {"p_name": "Nicolas Tagliafico", "teams": [{"t_name": "Ajax Amsterdam"}]},
         {"p_name": "Ezequiel Garay", "teams": [{"t_name": "Valencia CF"}]},
         {"p_name": "Enzo Perez", "teams": [{"t_name": "River Plate"}]},
         {"p_name": "Geronimo Rulli", "teams": [{"t_name": "Villarreal"}]},
@@ -130,7 +155,15 @@
 },
 {
   "England": [
-    {"p_name": "Gary Lineker", "teams": [{"t_name": "FC Barcelona"}]},
+    {
+      "p_name": "Bobby Charlton",
+      "teams": [{"t_name": "Manchester United"}]
+      },
+       {
+      "p_name": "George Best",
+      "teams": [{"t_name": "Manchester United"} ]
+      },
+      {"p_name": "Gary Lineker", "teams": [{"t_name": "FC Barcelona"}]},
      {"p_name": "Harry Kane", "teams": [{"t_name": "Tottenham Hotspur"},{"t_name":"Bayern Munich"}]},
     {"p_name": "David Beckham", "teams": [{"t_name": "Paris Saint-Germain"},{"t_name":"Real Madrid"},{"t_name":"Manchester United"}]},
     {"p_name": "Raheem Sterling", "teams": [{"t_name": "Manchester City"},{"t_name":"Chelsea FC"}]},
@@ -191,7 +224,18 @@
     {"p_name": "Tom Heaton", "teams": [{"t_name": "Manchester United"}]}
   ],
   "France": [
-    {"p_name": "Kylian Mbappe", "teams": [{"t_name": "Paris Saint-Germain"}]},
+    {
+      "p_name": "Thierry Henry",
+      "teams": [{"t_name": "AS Monaco"}, {"t_name": "Juventus"}, {"t_name": "Arsenal"}, {"t_name": "FC Barcelona"} ]
+      },
+      {
+      "p_name": "Michel Platini",
+      "teams": [ {"t_name": "Juventus"}]
+      },
+       {
+      "p_name": "Zinedine Zidane",
+      "teams": [{"t_name": "Juventus"}, {"t_name": "Real Madrid"}]
+      }, {"p_name": "Kylian Mbappe", "teams": [{"t_name": "Paris Saint-Germain"}]},
     {"p_name": "Antoine Griezmann", "teams": [{"t_name": "FC Barcelona"},{"t_name":"Atletico Madrid"}]},
     {"p_name": "N'Golo Kante", "teams": [{"t_name": "Chelsea FC"}]},
     {"p_name": "Paul Pogba", "teams": [{"t_name": "Manchester United"},{"t_name":"Juventus"}]},
@@ -228,8 +272,13 @@
 },
 {
   "Germany": [
-    {"p_name": "Toni Kroos", "teams": [{"t_name": "Real Madrid"}]},
-    {"p_name": "Manuel Neuer", "teams": [{"t_name": "Bayern Munich"}]},
+    {
+      "p_name": "Gerd Müller",
+      "teams": [{"t_name": "Bayern Munich"}]
+      },
+       {"p_name": "Toni Kroos", "teams": [{"t_name": "Real Madrid"}]},
+       {"p_name": "Jamal Musiala", "teams": [{"t_name": "Bayern Munich"}]},
+       {"p_name": "Manuel Neuer", "teams": [{"t_name": "Bayern Munich"}]},
     {"p_name": "Leroy Sane", "teams": [{"t_name": "Bayern Munich"}]},
     {"p_name": "Max Seeburg", "teams": [{"t_name": "Tottenham Hotspur"}]},
     {"p_name": "Joshua Kimmich", "teams": [{"t_name": "Bayern Munich"}]},
@@ -277,7 +326,7 @@
 },
 {
   "Spain": [
-    {"p_name": "Paco Alcácer", "teams": [{"t_name": "Borussia Dortmund"} ]},
+    {"p_name": "Paco Alcacer", "teams": [{"t_name": "Borussia Dortmund"} ]},
     {"p_name": "Sergio Ramos", "teams": [{"t_name": "Real Madrid"},{"t_name":"Paris Saint-Germain"}]},
     {"p_name": "Gerard Pique", "teams": [{"t_name": "FC Barcelona"}]},
     {"p_name": "Sergio Busquets", "teams": [{"t_name": "FC Barcelona"}]},
@@ -318,7 +367,11 @@
     {"p_name": "Jesus Navas", "teams": [{"t_name": "Sevilla FC"},{"t_name":"Real Madrid"},{"t_name":"Paris Saint-Germain"}]}
    ], 
    "Italy": [
-    {"p_name": "Giorgio Chiellini", "teams": [{"t_name": "Juventus"}]},
+    {
+      "p_name": "Paolo Maldini",
+      "teams": [{"t_name": "AC Milan"}]
+      },
+        {"p_name": "Giorgio Chiellini", "teams": [{"t_name": "Juventus"}]},
     {"p_name": "Leonardo Bonucci", "teams": [{"t_name": "Juventus"}]},
     {"p_name": "Gianluigi Buffon", "teams": [{"t_name": "Parma Calcio 1913"}]},
     {"p_name": "Lorenzo Insigne", "teams": [{"t_name": "SSC Napoli"}]},
@@ -429,11 +482,16 @@
 },
 {
   "Netherlands": [
-    {"p_name": "Virgil van Dijk", "teams": [{"t_name": "Liverpool FC"}]},
+    {
+      "p_name": "Marco van Basten",
+      "teams": [{"t_name": "Ajax Amsterdam"}, {"t_name": "AC Milan"}]
+      },
+       {"p_name": "Virgil van Dijk", "teams": [{"t_name": "Liverpool FC"}]},
     {"p_name": "Frenkie de Jong", "teams": [{"t_name": "FC Barcelona"},{"t_name": "Ajax Amsterdam"}]},
     {"p_name": "Matthijs de Ligt", "teams": [{"t_name": "Juventus"},{"t_name":"Ajax Amsterdam"},{"t_name":"Bayern Munich"}]},
     {"p_name": "Memphis Depay", "teams": [{"t_name": "Olympique Lyonnais"},{"t_name":"Atletico Madrid"},{"t_name":"FC Barcelona"}]},
     {"p_name": "Georginio Wijnaldum", "teams": [{"t_name": "Paris Saint-Germain"}]},
+    {"p_name": "Xavi Simons", "teams": [{"t_name": "Paris Saint-Germain"},{"t_name":"FC Barcelona"},{"t_name":"PSV Eindhoven"}]},
     {"p_name": "Donny van de Beek", "teams": [{"t_name": "Manchester United"}]},
     {"p_name": "Stefan de Vrij", "teams": [{"t_name": "Inter Milan"}]},
     {"p_name": "Nathan Ake", "teams": [{"t_name": "Manchester City"}]},
@@ -457,11 +515,11 @@
       "teams": [{"t_name": "Manchester United"}, {"t_name": "Juventus"}, {"t_name": "Real Madrid"}]
     },
     {
-      "p_name": "João Félix",
+      "p_name": "Joao Felix",
       "teams": [{"t_name": "Atletico Madrid"}, {"t_name": "FC Barcelona"}]
     },
     {
-      "p_name": "João Cancelo",
+      "p_name": "Joao Cancelo",
       "teams": [{"t_name": "Manchester City"}, {"t_name": "Inter Milan"}, {"t_name": "FC Barcelona"}]
     },
     {
@@ -469,11 +527,11 @@
       "teams": [{"t_name": "Porto"}, {"t_name": "Real Madrid"}]
     },
     {
-      "p_name": "André Gomes",
+      "p_name": "Andre Gomes",
       "teams": [{"t_name": "FC Barcelona"}, {"t_name": "Everton FC"}]
     },
     {
-      "p_name": "Nélson Semedo",
+      "p_name": "Nelson Semedo",
       "teams": [{"t_name": "FC Barcelona"}, {"t_name": "Wolverhampton Wanderers"}]
     },
     {
@@ -485,6 +543,10 @@
       "teams": [{"t_name": "FC Porto"}, {"t_name": "Leicester City"}]
     },
     {
+      "p_name": "Ruben Dias",
+      "teams": [{"t_name": "Manchester City"}]
+    },
+     {
       "p_name": "Ruben Neves",
       "teams": [{"t_name": "Wolverhampton Wanderers"}]
     },
@@ -493,7 +555,7 @@
       "teams": [{"t_name": "Wolverhampton Wanderers"}, {"t_name": "Liverpool FC"}]
     },
     {
-      "p_name": "João Moutinho",
+      "p_name": "Joao Moutinho",
       "teams": [{"t_name": "Wolverhampton Wanderers"}, {"t_name": "AS Monaco"}]
     },
     {
@@ -521,11 +583,11 @@
       "teams": [{"t_name": "Granada CF"}]
     },
     {
-      "p_name": "Gonçalo Guedes",
+      "p_name": "Goncalo Guedes",
       "teams": [{"t_name": "Valencia CF"}]
     },
     {
-      "p_name": "Francisco Trincão",
+      "p_name": "Francisco Trincao",
       "teams": [{"t_name": "FC Barcelona"}]
     },
     {
@@ -533,11 +595,11 @@
       "teams": [{"t_name": "Sporting CP"}]
     },
     {
-      "p_name": "Pedro Gonçalves",
+      "p_name": "Pedro Goncalves",
       "teams": [{"t_name": "Sporting CP"}]
     },
     {
-      "p_name": "André Silva",
+      "p_name": "Andre Silva",
       "teams": [{"t_name": "RB Leipzig"} , {"t_name": "AC Milan"}]
     },
     {
@@ -549,7 +611,7 @@
       "teams": [{"t_name": "Borussia Dortmund"}]
     },
     {
-      "p_name": "João Palhinha",
+      "p_name": "Joao Palhinha",
       "teams": [{"t_name": "Sporting CP"}]
     },
     {
@@ -577,7 +639,7 @@
       "teams": [{"t_name": "Manchester United"}, {"t_name": "AC Milan"}]
     },
     {
-      "p_name": "Rafael Leão",
+      "p_name": "Rafael Leao",
       "teams": [{"t_name": "AC Milan"}]
     },
     {
@@ -589,7 +651,7 @@
       "teams": [{"t_name": "Bayern Munich"} ]
     },
     {
-      "p_name": "João Pereira",
+      "p_name": "Joao Pereira",
       "teams": [{"t_name": "Sporting CP"}]
     },
     {
@@ -609,7 +671,7 @@
       "teams": [{"t_name": "Benfica"}]
     },
     {
-      "p_name": "Sérgio Oliveira",
+      "p_name": "Sergio Oliveira",
       "teams": [{"t_name": "FC Porto"}]
     },
     {
@@ -621,17 +683,17 @@
       "teams": [{"t_name": "Benfica"}]
     },
     {
-      "p_name": "Vinícius",
+      "p_name": "Vinicius",
       "teams": [{"t_name": "Benfica"}]
     },
     
     {
-      "p_name": "João Virgínia",
+      "p_name": "Joao Virginia",
       "teams": [{"t_name": "Everton FC"}]
     },
     
     {
-      "p_name": "José Sá",
+      "p_name": "Jose Sa",
       "teams": [{"t_name": "Olympiacos"}]
     }
   ]

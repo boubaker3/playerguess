@@ -17,7 +17,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [currentLevel, setCurrentLevel] = useState(1);
   const [score, setScore] = useState(0);
-  const [counter, setCounter] = useState(60);
+  const [counter, setCounter] = useState(120);
   const [gameStarted, setGameStarted] = useState(false);
   const [shake, setShake] = useState(false); // State for controlling shake animation
   const [teams, setTeams] = useState(null); // State for controlling shake animation
@@ -27,6 +27,7 @@ function App() {
   const [columnIndices, setColumnIndices] = useState([]); // State for holding column indices
   const [guessedPlayers, setGuessedPlayers] = useState([]); // State to hold guessed players
 
+  const [attempt,setAttempt]=useState(0)
   var guessed = [];
 
   useEffect(() => {
@@ -36,27 +37,32 @@ function App() {
   }, [currentLevel]);
 
   useEffect(() => {
-    const timer = counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
-    if (counter === 0) {
-      clearInterval(timer);
-      if (playerCountHor === 3 && playerCountVer === 3) {
-        setCurrentLevel(currentLevel + 1);
-        setCounter(60);
-        setPlayerCountVer(1);
-        setPlayerCountHor(1);
-        setCount(0);
-      } else {
-        setGameStarted(false);
-        setCurrentLevel(1);
+       const timer = counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
+      if (counter === 0) {
+        clearInterval(timer);
+        if (playerCountHor === 3 && playerCountVer === 3) {
+          setCurrentLevel(currentLevel + 1);
+          setCounter(120);
+          setPlayerCountVer(1);
+          setPlayerCountHor(1);
+          setCount(0);
+        } else {
+          setGameStarted(false);
+          setPlayerCountVer(1);
+          setPlayerCountHor(1);
+           setCurrentLevel(1);
+        }
       }
-    }
-    return () => clearInterval(timer);
+      return () => clearInterval(timer);
+   
+
   }, [counter, currentLevel, playerCountHor, playerCountVer]);
 
   const startGame = () => {
     const createdGridAndPlayers = createGridAndPlayers(jsonData);
     setGridAndPlayers(createdGridAndPlayers);
-    setCounter(60);
+   setCounter(120); 
+    
   };
 
     const createGridAndPlayers = (jsonData) => {
@@ -120,9 +126,7 @@ function App() {
         // Set current nationalities and teams
         setCurrentNationalities(shuffledNationalities);
         setCurrentTeams(shuffledTeams);
-    console.log(shuffledTeams)
-    console.log(shuffledNationalities)
-        // Check if there are exactly 9 players found
+         // Check if there are exactly 9 players found
         if (players.length === 9) {
           found = true;
         }
@@ -145,7 +149,7 @@ function App() {
       for (const countryData of jsonData.data) {
         if (countryData[currentNationality]) {
           for (const playerData of countryData[currentNationality]) {
-            if (playerData.teams.some(team => team.t_name === currentTeam) && playerData.p_name === answer) {
+            if (playerData.teams.some(team => team.t_name === currentTeam) && playerData.p_name.toLowerCase() === answer.toLowerCase()) {
               return true;
           }
           
@@ -178,6 +182,13 @@ function App() {
     
 
   const handleButtonClick = () => {
+    if(attempt==1){
+      console.log(attempt)
+      startGame()
+    }
+    setAttempt(attempt+1)
+ 
+
     const { grid, players } = gridAndPlayers;
     const currentNationality = currentNationalities[playerCountVer - 1]; // Get the current nationality
     const currentTeam = currentTeams[playerCountHor - 1]; // Get the current team
@@ -187,7 +198,7 @@ function App() {
       
       // Check if the player has played in the current team for the current nationality
       if (isPlayerExists()) {
-        setGuessedPlayers(prevGuessedPlayers => [...prevGuessedPlayers, answer]);
+        setGuessedPlayers(prevGuessedPlayers => [...prevGuessedPlayers, answer.toLowerCase()]);
         setScore(prevScore => prevScore + currentLevel); // Update score using previous state
         
         // Update player count and current level if needed
@@ -281,10 +292,10 @@ function App() {
       ) : colIndex === 0 ? (
 <Avatar sx={{ borderRadius: 0, width: "100%", height: "100%", objectFit: "cover" }} src={teams.find(entry => entry.name === cell)?.imglink || {errorImg}} alt={cell} />
       ) : (
-        count>=guessedPlayers.length&&guessedPlayers.includes(cell) ||
-         (isNameMatches(cell) && !guessedPlayers.some((player, index) => player === answer && 
+        count>=guessedPlayers.length&&guessedPlayers.includes(cell.toLowerCase()) ||
+         (isNameMatches(cell.toLowerCase()) && !guessedPlayers.some((player, index) => player.toLowerCase() === answer.toLowerCase() && 
          (rowIndex < playerCountHor || (rowIndex === playerCountHor && colIndex <= playerCountVer) && index < count)))
-          ? cell :""
+          ? (cell.length>0?cell:"Right!") :""
       )}
     </Box>
     
@@ -301,6 +312,7 @@ function App() {
              label="Enter a player..."
              variant="outlined"
              focused
+             
              InputProps={{
                style: {
                  width: "100%",
@@ -310,8 +322,10 @@ function App() {
                },
              }}
            />
-           <Button onClick={handleButtonClick} variant="contained" color="primary">
-             Enter
+           <Button onClick={()=>{
+            handleButtonClick()
+           }} variant="contained" color="primary">
+             Guess
            </Button>
          </div>
          {error && <div className="text-primary text-center">{error}</div>}
